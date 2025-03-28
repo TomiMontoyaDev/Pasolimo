@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body {
   width: 100%;
@@ -15,7 +16,7 @@ body {
 
 body {
   background-color: gray;
-  font-family: "Lexend", sans-serif;
+  font-family: "Unna", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
