@@ -107,16 +107,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-  #banner {
-    height: auto;
-    margin-top: 100px;
-  }
-
-  #bannerimg {
-    height: auto;
-    max-height: 400px;
-  }
-
   .navbar-nav .nav-item {
     padding: 5px 10px;
   }
@@ -126,17 +116,21 @@ footer {
   }
 }
 
-#textbanner h1 {
+#textbanner {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
+  z-index: 1;
+}
+
+#textbanner h1 {
   color: #e9dabd;
   font-size: 5rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 #btn-banner {
