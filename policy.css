@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  background-color: #e9dabd;
+  background-color: #343a40;
   font-family: "Unna", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -89,18 +89,33 @@ footer {
 }
 
 #policy {
+  display: flex;
+  flex-direction: column;
   color: black;
-  font-size: 50px;
+  font-size: 35px;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 95%;
+  border: black solid 4px;
+  padding: 20px;
+  background-color: #e9dabd;
 }
 
 #policy h1 {
-  color: black;
+  margin-top: 30px;
+  color: #e9dabd;
   font-size: 50px;
   font-weight: bold;
+  border: black solid 4px;
+  padding: 10px;
+  background-color: black;
 }
 
 #policyimg {
-  fill: black;
   width: 200px;
   height: 200px;
+  border-radius: 50%;
 }
