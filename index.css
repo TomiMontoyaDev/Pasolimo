@@ -4,9 +4,12 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 * {
@@ -94,6 +97,7 @@ footer {
   margin-top: 0px;
   overflow: hidden;
   z-index: 1;
+  object-fit: cover;
 }
 
 #bannerimg {
@@ -138,23 +142,20 @@ footer {
 }
 
 #booknow2 {
-  border: solid 4px #e9dabd;
-  color: #e9dabd;
+  background-color: #e9dabd;
+  color: black;
   font-weight: bold;
   font-size: 25px;
   padding: 20px;
+  border: solid 5px black;
 }
 
 #booknow2:hover {
-  background-color: #e9dabd;
-  color: black;
-}
-
-#booknow2 h5 {
+  background-color: black;
   color: #e9dabd;
 }
 
-#facebook {
+#booknow2 h5 {
   color: #e9dabd;
 }
 
@@ -164,4 +165,8 @@ footer {
 
 .socialmedia:hover {
   color: #343a40;
+}
+
+.carousel {
+  width: 100vw;
 }
