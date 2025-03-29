@@ -119,3 +119,33 @@ footer {
   height: 200px;
   border-radius: 50%;
 }
+
+@media (max-width: 375px) and (max-height: 667px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 900px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
+}

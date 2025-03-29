@@ -53,6 +53,8 @@ nav ul li {
 #logo {
   display: flex;
   margin-left: 15px;
+  width: 150px;
+  height: 150px;
 }
 
 #booknow {
@@ -169,4 +171,74 @@ footer {
 
 .carousel {
   width: 100vw;
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #banner {
+    height: 70vh;
+  }
+
+  #bannerimg {
+    height: 30vh;
+  }
+
+  #textbanner h1 {
+    font-size: 2rem;
+  }
+
+  #booknow2 {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: -150px;
+  }
+  #booknow2 h5 {
+    font-size: 1rem;
+  }
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 900px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #banner {
+    height: 70vh;
+  }
+
+  #bannerimg {
+    height: 30vh;
+  }
+
+  #textbanner h1 {
+    font-size: 2rem;
+  }
+
+  #booknow2 {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: -200px;
+  }
+  #booknow2 h5 {
+    font-size: 1rem;
+  }
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
 }
