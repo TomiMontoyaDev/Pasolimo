@@ -12,6 +12,14 @@ body {
   text-align: center;
 }
 
+:root {
+  --primary-color: #e9dabd;
+  --secondary-color: #343a40;
+  --text-color: black;
+  --background-color: gray;
+  --tertiary-color: #212529;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,18 +27,30 @@ body {
 }
 
 body {
-  background-image: url("./img/aboutusbg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Unna", sans-serif;
+  background-color: var(--background-color);
+  font-family: "Unna", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: black;
+  color: var(--text-color);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/aboutusbg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 .nav-link:hover {
-  color: #e9dabd !important;
+  color: var(--primary-color) !important;
 }
 
 .navbar {
@@ -50,15 +70,15 @@ nav ul li {
 }
 
 #booknow {
-  border: solid 3px #e9dabd;
-  color: #e9dabd;
+  border: solid 3px var(--primary-color);
+  color: var(--primary-color);
   font-weight: bold;
   padding: 10px;
 }
 
 #booknow:hover {
-  background-color: #e9dabd;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 #booknow h5 {
@@ -69,8 +89,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #343a40;
-  color: #e9dabd;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
   padding: 5px 0;
 }
@@ -84,172 +104,126 @@ footer {
 }
 
 .socialmedia {
-  color: #e9dabd;
+  color: var(--primary-color);
 }
 
 .socialmedia:hover {
-  color: #343a40;
+  color: var(--secondary-color);
 }
 
-#aboutus {
-  margin-top: 250px;
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  font-size: 25px;
-  background-color: RGB(233, 218, 189, 0.8);
-  padding: 20px;
-  margin-bottom: 50px;
+.text-muted {
+  color: var(--tertiary-color) !important;
+  background-color: var(--primary-color);
 }
 
-#aboutus h1 {
-  margin-top: -100px;
-  color: #e9dabd;
-  font-size: 50px;
-  font-weight: bold;
-  border: black solid 4px;
-  padding: 10px;
-  background-color: black;
+@media (max-width: 400px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
 }
 
 #aboutusimg {
-  width: 400px;
-  height: 350px;
-  border: solid 4px black;
-  margin-right: 10px;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 10px 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: solid 3px var(--primary-color);
+  margin-right: -200px;
+}
+
+#aboutusimgcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
 }
 
 #aboutustitle {
-  font-size: 50px;
-  color: #e9dabd;
+  font-size: 2.5rem;
   font-weight: bold;
-  background-color: black;
-  width: 80%;
-}
-#people {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#people h1 {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#peopletitle {
-  font-size: 50px;
   color: #e9dabd;
+  background-color: #212529;
+  padding: 10px;
+  margin-top: 80px; /* Ajusta este valor si la navbar cubre el texto */
+  text-align: center;
+  width: 100%;
+}
+
+#aboutustextcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 20px;
+  max-width: 800px; /* Limita el ancho del contenedor de texto */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  font-size: 1.2rem; /* Tamaño de fuente para el texto */
+}
+
+@media (max-width: 768px) {
+  #aboutusimg {
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: -150px;
+  }
+  #aboutustitle {
+    font-size: 2rem;
+    margin-top: 100px; /* Asegura espacio suficiente en pantallas más pequeñas */
+  }
+
+  #peoplewhotrustustitle {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #aboutusimg {
+    max-width: 90%;
+    margin-right: 0;
+    margin-bottom: -150px;
+  }
+  #aboutustitle {
+    font-size: 1.8rem;
+    margin-top: 120px; /* Más espacio en móviles pequeños */
+  }
+
+  #peoplewhotrustustitle {
+    margin-top: -50px;
+  }
+}
+
+#peoplewhotrustustitle {
+  font-size: 2.5rem;
   font-weight: bold;
-  background-color: black;
-  width: 80%;
-  margin-bottom: 10px;
-}
-@media (max-width: 375px) and (max-height: 667px) {
-  #logo {
-    width: 100px;
-    height: 100px;
-  }
-
-  #booknow {
-    font-size: 1rem;
-    padding: 5px;
-  }
-  #booknow h5 {
-    font-size: 0.8rem;
-  }
-
-  #aboutusimg {
-    width: 500px;
-    height: 450px;
-    border: solid 4px black;
-  }
-
-  #aboutus h1 {
-    font-size: 20px;
-  }
-
-  #aboutus p {
-    font-size: 20px;
-  }
-
-  #aboutus {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    font-size: 35px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 95%;
-    border: black solid 4px;
-    padding: 10px;
-    margin-bottom: 100px;
-    background-color: RGB(233, 218, 189, 0.8);
-  }
-
-  #aboutustitle {
-    margin-top: 150px;
-    font-size: 40px;
-    color: #e9dabd;
-    font-weight: bold;
-    background-color: black;
-    width: 95%;
-  }
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  width: 57%;
 }
 
-@media (max-width: 400px) and (max-height: 900px) {
-  #logo {
-    width: 100px;
-    height: 100px;
-  }
+.custom-carousel {
+  width: 100%; /* Ajusta el ancho */
+  max-width: 1000px; /* Tamaño máximo */
+  margin: auto; /* Centrarlo */
+}
 
-  #booknow {
-    font-size: 1rem;
-    padding: 5px;
-  }
-  #booknow h5 {
-    font-size: 0.8rem;
-  }
-  #aboutusimg {
-    width: 500px;
-    height: 400px;
-    border: solid 4px black;
-  }
-
-  #aboutus {
-    font-size: 20px;
-  }
-
-  #aboutus p {
-    font-size: 20px;
-  }
-
-  #aboutus h1 {
-    font-size: 30px;
-  }
-
-  #aboutus {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    font-size: 35px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 95%;
-    border: black solid 4px;
-    padding: 10px;
-    margin-bottom: 100px;
-    background-color: RGB(233, 218, 189, 0.8);
-  }
-
-  #aboutustitle {
-    margin-top: 150px;
-    font-size: 40px;
-    color: #e9dabd;
-    font-weight: bold;
-    background-color: black;
-    width: 95%;
-  }
+.custom-carousel img {
+  height: auto; /* Ajusta la altura */
+  object-fit: cover; /* Para que las imágenes se ajusten sin deformarse */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  border: solid 3px var(--primary-color); /* Borde */
+  margin-bottom: 100px; /* Espacio entre imágenes */
 }
