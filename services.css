@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  font-family: "Unna", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #e9dabd !important;
+}
+
+.navbar {
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  z-index: 1030;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  padding: 0 30px 0 30px;
+}
+
+#booknow {
+  border: solid 3px #e9dabd;
+  color: #e9dabd;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#booknow:hover {
+  background-color: #e9dabd;
+  color: black;
+}
+
+#booknow h5 {
+  color: #e9dabd;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: #e9dabd;
+  text-align: center;
+  padding: 5px 0;
+}
+
+#reservationForm {
+  padding: 25px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.socialmedia {
+  color: #e9dabd;
+}
+
+.socialmedia:hover {
+  color: #343a40;
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) and (max-height: 900px) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #booknow {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #booknow h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
