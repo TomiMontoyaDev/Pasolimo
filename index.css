@@ -179,27 +179,12 @@ footer {
     height: 100px;
   }
 
-  #banner {
-    height: 70vh;
-  }
-
-  #bannerimg {
-    height: 30vh;
-  }
-
   #textbanner h1 {
-    font-size: 2rem;
-    margin-top: 50px;
-  }
-
-  #booknow2 {
-    font-size: 1.5rem;
+    font-size: 4rem;
     padding: 10px;
-    margin: auto;
-    margin-top: 20px;
   }
-  #booknow2 h5 {
-    font-size: 1rem;
+  #booknow2 {
+    margin-top: 100px;
   }
   #booknow {
     font-size: 1rem;
@@ -219,28 +204,14 @@ footer {
     width: 100px;
     height: 100px;
   }
-
-  #banner {
-    height: 70vh;
-  }
-
-  #bannerimg {
-    height: 30vh;
-  }
-
   #textbanner h1 {
-    font-size: 2rem;
-    margin-top: 50px;
+    font-size: 4rem;
+    padding: 10px;
+  }
+  #booknow2 {
+    margin-top: 100px;
   }
 
-  #booknow2 {
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-top: -100px;
-  }
-  #booknow2 h5 {
-    font-size: 1rem;
-  }
   #booknow {
     font-size: 1rem;
     padding: 5px;
@@ -256,27 +227,6 @@ footer {
     height: 100px;
   }
 
-  #banner {
-    height: 70vh;
-  }
-
-  #bannerimg {
-    height: 30vh;
-  }
-
-  #textbanner h1 {
-    font-size: 2rem;
-    margin-top: 50px;
-  }
-
-  #booknow2 {
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-top: -100px;
-  }
-  #booknow2 h5 {
-    font-size: 1rem;
-  }
   #booknow {
     font-size: 1rem;
     padding: 5px;
