@@ -144,6 +144,10 @@ footer {
   #policy h1 {
     font-size: 25px;
   }
+
+  #reservationForm {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 425px) and (max-height: 900px) {
@@ -165,5 +169,9 @@ footer {
 
   #policy h1 {
     font-size: 25px;
+  }
+
+  #reservationForm {
+    padding: 5px;
   }
 }
