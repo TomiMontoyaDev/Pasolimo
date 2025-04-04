@@ -175,3 +175,11 @@ footer {
     padding: 5px;
   }
 }
+
+#footertitle {
+  color: #e9dabd;
+}
+
+#footertitle:hover {
+  color: blue;
+}

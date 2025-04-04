@@ -131,3 +131,38 @@ footer {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.btn.btn-outline-light {
+  border: solid 3px #e9dabd;
+  color: #e9dabd;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btn.btn-outline-light:hover {
+  background-color: #e9dabd;
+  color: black;
+}
+
+.btn.btn-outline-light h5 {
+  color: #e9dabd;
+}
+
+#footertitle {
+  color: #e9dabd;
+}
+
+#footertitle:hover {
+  color: blue;
+}

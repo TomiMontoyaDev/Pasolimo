@@ -271,3 +271,11 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+#footertitle {
+  color: #e9dabd;
+}
+
+#footertitle:hover {
+  color: blue;
+}
